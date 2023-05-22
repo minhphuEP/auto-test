@@ -1,0 +1,31 @@
+{
+  "name": "auto-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test ./src/ui/tests/authenticationUser.ts --reporter=line,allure-playwright",
+    "allure:generate": "allure generate ./allure-results --clean && allure open ./allure-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minhphuEP/auto-test.git"
+  },
+  "keywords": [],
+  "author": "MinhPhu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minhphuEP/auto-test/issues"
+  },
+  "homepage": "https://github.com/minhphuEP/auto-test#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.30.0",
+    "@types/node": "^20.2.1",
+    "allure-commandline": "^2.21.0",
+    "allure-playwright": "^2.0.0",
+    "csv-parse": "^5.3.5",
+    "dotenv": "^16.0.3",
+    "typescript": "^5.0.4",
+    "xlsx": "^0.18.5"
+  }
+}
